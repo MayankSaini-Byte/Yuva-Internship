@@ -1,0 +1,97 @@
+{
+  "cleaning_log": {
+    "rows_before": 53940,
+    "duplicates_removed": 146,
+    "invalid_zero_dimension_rows_removed": 19,
+    "physical_outliers_removed": 4,
+    "missing_values_remaining": 0,
+    "rows_after": 53771
+  },
+  "n_features_engineered": [
+    "volume",
+    "price_per_carat",
+    "cut_enc",
+    "color_enc",
+    "clarity_enc"
+  ],
+  "regression": {
+    "cv_results": {
+      "Linear Regression": {
+        "mean_r2": 0.9043841371824642,
+        "std_r2": 0.012374637259459408
+      },
+      "Ridge Regression": {
+        "mean_r2": 0.904555471221694,
+        "std_r2": 0.012516006793738516
+      },
+      "Random Forest": {
+        "mean_r2": 0.9710941764701938,
+        "std_r2": 0.0027330837231948745
+      },
+      "Gradient Boosting": {
+        "mean_r2": 0.9711490919078966,
+        "std_r2": 0.0030759065537349175
+      }
+    },
+    "best_model": "Gradient Boosting",
+    "best_params": {
+      "model__learning_rate": 0.1
+    },
+    "best_cv_r2": 0.9711490919078966,
+    "test_metrics": {
+      "rmse": 621.5392641688983,
+      "mae": 345.9572292109577,
+      "r2": 0.9752020703150538
+    },
+    "feature_columns": [
+      "carat",
+      "depth",
+      "table",
+      "x",
+      "y",
+      "z",
+      "volume",
+      "cut_enc",
+      "color_enc",
+      "clarity_enc"
+    ]
+  },
+  "clustering": {
+    "k_range_tested": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "silhouette_scores": [
+      0.21158347864473145,
+      0.18891327332496013,
+      0.20899618540101758,
+      0.17287155604579285,
+      0.17430601077593313,
+      0.17481043850249153,
+      0.16994985546416308
+    ],
+    "inertias": [
+      44485.89075899974,
+      38546.51495842228,
+      33915.07113630788,
+      31073.556615673933,
+      28788.542348492367,
+      27174.560497507977,
+      25783.483966015385
+    ],
+    "silhouette_optimal_k": 2,
+    "chosen_k": 4,
+    "final_silhouette": 0.20899618540101758,
+    "cluster_sizes": {
+      "0": 1640,
+      "1": 2939,
+      "2": 2103,
+      "3": 1318
+    }
+  }
+}

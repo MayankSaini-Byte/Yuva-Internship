@@ -1,0 +1,9 @@
+,dtype,missing,missing_pct
+species,object,0,0.0
+island,object,0,0.0
+bill_length_mm,float64,2,0.5813953488372093
+bill_depth_mm,float64,2,0.5813953488372093
+flipper_length_mm,float64,2,0.5813953488372093
+body_mass_g,float64,2,0.5813953488372093
+sex,object,11,3.1976744186046515
+year,int64,0,0.0

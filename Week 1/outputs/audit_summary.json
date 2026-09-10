@@ -1,0 +1,91 @@
+{
+  "rows_raw": 398,
+  "columns_raw": 9,
+  "source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data",
+  "sha256": "48b830e11feee5572525f8f1691ddb9d38d3d7b7063edcd8fca672c2a5e17d8d",
+  "invalid_numeric_tokens": {
+    "mpg": 0,
+    "cylinders": 0,
+    "displacement": 0,
+    "horsepower": 0,
+    "weight": 0,
+    "acceleration": 0,
+    "model_year": 0,
+    "origin": 0
+  },
+  "missing_before": {
+    "mpg": 0,
+    "cylinders": 0,
+    "displacement": 0,
+    "horsepower": 6,
+    "weight": 0,
+    "acceleration": 0,
+    "model_year": 0,
+    "origin": 0,
+    "car_name": 0
+  },
+  "duplicates": 0,
+  "names_changed": 15,
+  "domain_violations": {
+    "mpg": 0,
+    "displacement": 0,
+    "horsepower": 0,
+    "weight": 0,
+    "acceleration": 0,
+    "cylinders": 0,
+    "origin": 0,
+    "model_year": 0
+  },
+  "train_rows": 318,
+  "test_rows": 80,
+  "train_missing_hp": 5,
+  "test_missing_hp": 1,
+  "outlier_rows": 20,
+  "outliers": [
+    {
+      "feature": "displacement",
+      "lower": -143.0,
+      "upper": 501.0,
+      "train_flagged": 0,
+      "test_flagged": 0,
+      "total_flagged": 0
+    },
+    {
+      "feature": "horsepower",
+      "lower": 4.5,
+      "upper": 192.5,
+      "train_flagged": 10,
+      "test_flagged": 4,
+      "total_flagged": 14
+    },
+    {
+      "feature": "weight",
+      "lower": 154.125,
+      "upper": 5663.125,
+      "train_flagged": 0,
+      "test_flagged": 0,
+      "total_flagged": 0
+    },
+    {
+      "feature": "acceleration",
+      "lower": 8.8,
+      "upper": 22.400000000000002,
+      "train_flagged": 5,
+      "test_flagged": 2,
+      "total_flagged": 7
+    }
+  ],
+  "horsepower_train_median": 92.0,
+  "features_prepared": 14,
+  "missing_after": 0,
+  "validation": "PASS: split separation, row preservation, finite matrices, no missing cleaned values, saved transformer round trip, training scaling",
+  "python_version": "3.12.14",
+  "versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3",
+    "python-docx": "1.2.0"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "dataset_shape": [
+    569,
+    32
+  ],
+  "class_counts": {
+    "benign": 357,
+    "malignant": 212
+  },
+  "missing_values": 0,
+  "cv_results": {
+    "Logistic Regression": {
+      "mean_f1": 0.9563226427387121,
+      "std_f1": 0.007952497429512212,
+      "folds": [
+        0.9482758620689655,
+        0.954954954954955,
+        0.9473684210526315,
+        0.9661016949152542,
+        0.9649122807017544
+      ]
+    },
+    "Random Forest": {
+      "mean_f1": 0.9512605710500127,
+      "std_f1": 0.011655322969266343,
+      "folds": [
+        0.9401709401709402,
+        0.9642857142857143,
+        0.9380530973451328,
+        0.9482758620689655,
+        0.9655172413793104
+      ]
+    },
+    "SVM (RBF)": {
+      "mean_f1": 0.9478169872498544,
+      "std_f1": 0.017833973609412336,
+      "folds": [
+        0.9322033898305084,
+        0.9541284403669725,
+        0.9217391304347826,
+        0.9661016949152542,
+        0.9649122807017544
+      ]
+    }
+  },
+  "best_model_name": "Logistic Regression",
+  "best_params": {
+    "clf__C": 10,
+    "select__k": 20
+  },
+  "best_cv_f1": 0.9788512301171923,
+  "test_metrics": {
+    "accuracy": 0.9649122807017544,
+    "precision": 0.9722222222222222,
+    "recall": 0.9722222222222222,
+    "f1": 0.9722222222222222,
+    "roc_auc": 0.9943783068783069
+  },
+  "selected_features": [
+    "mean radius",
+    "mean perimeter",
+    "mean area",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "radius error",
+    "perimeter error",
+    "area error",
+    "concave points error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "perimeter_radius_ratio"
+  ]
+}

@@ -1,0 +1,7 @@
+Raw data: 398 rows x 9 columns
+Missing horsepower: 6
+Names standardized: 15
+Outlier rows flagged and retained: 20
+Train/test: 318/80; features: 14
+Training horsepower median: 92.0
+PASS: split separation, row preservation, finite matrices, no missing cleaned values, saved transformer round trip, training scaling
